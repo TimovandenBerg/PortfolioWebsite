@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../main.css">
+    <link rel="stylesheet" href="./weatherapp.css">
+    <link rel="icon" href="../../../assets/svg/LogoBlackWhite.svg">
+
+    <title>WeatherApp - Timo vd Berg</title>
+</head>
+
+<body>
+    <nav class="navigation-bar">
+        <section class="navigation-bar__logo">
+            <a href="../../../index.html"><img src="../../../assets/svg/Logo.svg" alt="Logo van Timo vd Berg"></a>
+        </section>
+        <section class="navigation-bar__links">
+            <a class="navigation-bar__links--is-active" href="../../../index.html">Work</a>
+            <a href="../../about/about.html">About Me</a>
+            <a href="../../contact/contact.html">Contact</a>
+        </section>
+        <section class="navigation-bar__close">
+            <img id="js--hamburger-menu-bars" class="" src="../../../assets/svg/Bars.svg"
+                alt="Knop voor openen en sluiten menu">
+            <img id="js--hamburger-menu-xmark" class="display-none" src="../../../assets/svg/Xmark.svg"
+                alt="Knop voor openen en sluiten menu">
+        </section>
+    </nav>
+    <main>
+        <section id="js--mobile-nav" class="mobile-nav display-none">
+            <a href="../../../index.html">Work</a>
+            <a href="../../about/about.html">About Me</a>
+            <a href="../../contact/contact.html">Contact</a>
+        </section>
+        <section class="weatherapp">
+            <h1>WeatherApp</h1>
+            <h3>Reacte API call practise</h3>
+
+            <section class="margin-bottom">
+                <p>A personal challenge of mine was to make a weather application in react using a weather api. During this small project I learned the following:</p>
+                <li>How to use API's in React</li>
+                <li>State management</li>
+                <li>Prop management</li>
+                <li>Making use of as many reuseable Components</li>
+            </section>
+
+            <section>
+                <img src="../../../assets/img/moonpage/MoonpageHome.jpg" alt="Moonpage homepage">
+                <figcaption>The homepage of the project.</figcaption>
+                <img src="../../../assets/img/moonpage/MoonpageDestination.jpg" alt="Destination page">
+                <figcaption>The destination page of the project with information on planets.</figcaption>
+                <img src="../../../assets/img/moonpage/MoonpageCrew.jpg" alt="Userflow1">
+                <figcaption>The crew page of the project with information on crew members.</figcaption>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <a href="./vdv.html">VDV</a>
+        <a href="../chefar/chefar.html">ChefAR</a>
+        <a href="../moonpage/moonpage.html">Moonpage</a>
+        <a class="footer-active" href="./weatherapp.html">WeatherApp</a>
+    </footer>
+</body>
+<script src="../../../main.js"></script>
+
+</html>
