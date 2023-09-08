@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="icon" href="../../assets/svg/LogoBlackWhite.svg">
+
+    <title>Contact - Timo vd Berg</title>
+</head>
+
+<body>
+    <nav class="navigation-bar">
+        <section class="navigation-bar__logo">
+            <a href="../../index.html"><img src="../../assets/svg/Logo.svg" alt="Logo van Timo vd Berg"></a>
+        </section>
+        <section class="navigation-bar__links">
+            <a href="../../index.html">Work</a>
+            <a href="../about/about.html">About Me</a>
+            <a class="navigation-bar__links--is-active" href="./contact.html">Contact</a>
+        </section>
+        <section class="navigation-bar__close">
+            <img 
+                id="js--hamburger-menu-bars" 
+                class="" 
+                src="../../assets/svg/Bars.svg"
+                alt="Knop voor openen en sluiten menu"
+            >
+            <img 
+                id="js--hamburger-menu-xmark" 
+                class="display-none" 
+                src="../../assets/svg/Xmark.svg"
+                alt="Knop voor openen en sluiten menu"
+            >
+        </section>
+    </nav>
+    <main>
+        <section id="js--mobile-nav" class="mobile-nav display-none">
+            <a href="../../index.html">Work</a>
+            <a href="../about/about.html">About Me</a>
+            <a href="./contact.html">Contact</a>
+        </section>
+        <section class="contact">
+            <h1>Contact Me</h1>
+            <p>You can use the form below or email me at <br> <span class="email">bergvandentimo@gmail.com</span></p>
+            <form 
+                class="contact__form" 
+                action="https://formspree.io/f/xbjvdzda" 
+                method="post" 
+            >
+                <section class="contact__form__names">
+                    <section class="contact__form__names__name">
+                        <label for="fname">First Name <span class="required">(required)</span></label>
+                        <input type="text" id="fname" name="First Name" required>
+                    </section>
+                    <section class="contact__form__names__name">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="Last Name">
+                    </section>
+                </section>
+
+                <label for="email">Email Address <span class="required">(required)</span></label>
+                <input type="email" id="email" name="Email" required>
+
+                <label for="subject">Subject <span class="required">(required)</span></label>
+                <input type="text" id="subject" name="Subject" required>
+
+                <label for="message">Message <span class="required">(required)</span>)</label>
+                <textarea name="Message" id="message" cols="30" rows="10" required></textarea>
+
+                <input class="contact__form__submit" type="submit" value="SUBMIT">
+            </form>
+        </section>
+    </main>
+</body>
+<script src="../../main.js"></script>
+
+</html>

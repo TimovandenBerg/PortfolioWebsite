@@ -1,0 +1,74 @@
+@import "../../main.css";
+
+/* ///////////////////////// */
+/*           Work            */
+/* ///////////////////////// */
+
+/* Cards */
+.work {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.work__card {
+    position: relative;
+    max-width: 90vw;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.work__card[data-company="VDV"] {
+    background: url('../../assets/svg/VDV.svg') center no-repeat;
+    background-size: cover;
+}
+.work__card[data-company="ChefAR"] {
+    background: url('../../assets/img/chefar/glassesNebula.png') center no-repeat;
+    background-size: cover;
+    background-color: var(--clr-soft-grey-1);
+}
+.work__card[data-company="Moonpage"] {
+    background: url('../../assets/img/moonpage/MoonpageBackground.jpg') center no-repeat;
+    background-size: cover;
+    background-color: var(--clr-soft-grey-1);
+}
+
+.work__card[data-company="VDV"] img,
+.work__card[data-company="ChefAR"] img,
+.work__card[data-company="Moonpage"] img {
+    opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .work__card {
+        max-width: 70vw;
+        max-height: 30vh;
+    }
+}
+
+.work__card__overflow {
+    background-color: var(--clr-light-grey-opacity-80);
+    font-family: var(--fnt-chivo);
+    font-size: var(--fnt-size-24);
+    color: var(--clr-light-black);
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.work__card__overflow:hover {
+    opacity: 1;
+    cursor: pointer;
+}
