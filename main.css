@@ -30,6 +30,7 @@ select {
   font: inherit;
 }
 
+
 /* General Variables Set */
 :root {
   --fnt-chivo: "Chivo", sans-serif;
@@ -125,6 +126,7 @@ footer a:hover {
   }
 }
 
+
 /* Utility Class */
 .display-none {
   display: none !important;
@@ -151,6 +153,14 @@ footer a:hover {
 .font-weight-600 {
   font-weight: 600;
 }
+
+.fadeIn {
+  animation: fadeIn 0.4s;
+}
+.fadeOut {
+  animation: fadeOut 0.4s forwards;
+}
+
 
 /* Navigation */
 .navigation-bar {
@@ -225,7 +235,6 @@ footer a:hover {
   width: 100%;
   background-color: var(--clr-white);
   z-index: 20;
-  animation: fadeIn 0.4s;
 }
 
 .mobile-nav a {
@@ -246,8 +255,21 @@ footer a:hover {
 @keyframes fadeIn {
   from {
     transform: translateX(50%);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(50%);
+    opacity: 0;
   }
 }

@@ -13,6 +13,8 @@ window.onload = () => {
       mobileNavButtonBars.classList.add("display-none");
       mobileNavButtonXmark.classList.remove("display-none");
       mobileNav.classList.remove("display-none");
+      mobileNav.classList.add("fadeIn");
+      mobileNav.classList.remove("fadeOut");
       open = true;
     }
   });
@@ -21,7 +23,9 @@ window.onload = () => {
     if (open) {
       mobileNavButtonBars.classList.remove("display-none");
       mobileNavButtonXmark.classList.add("display-none");
-      mobileNav.classList.add("display-none");
+      // mobileNav.classList.add("display-none");
+      mobileNav.classList.remove("fadeIn");
+      mobileNav.classList.add("fadeOut");
       open = false;
     }
   });
