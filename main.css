@@ -202,6 +202,9 @@ footer a:hover {
 .navigation-bar__close {
   width: 1.5rem;
 }
+.navigation-bar__close:hover {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 768px) {
   .navigation-bar__close {
@@ -222,6 +225,7 @@ footer a:hover {
   width: 100%;
   background-color: var(--clr-white);
   z-index: 20;
+  animation: fadeIn 0.4s;
 }
 
 .mobile-nav a {
@@ -236,5 +240,14 @@ footer a:hover {
 @media screen and (min-width: 768px) {
   .mobile-nav {
     display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
