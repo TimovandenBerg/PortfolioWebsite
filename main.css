@@ -30,7 +30,6 @@ select {
   font: inherit;
 }
 
-
 /* General Variables Set */
 :root {
   --fnt-chivo: "Chivo", sans-serif;
@@ -99,10 +98,11 @@ iframe {
 }
 
 footer {
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 5vw;
   margin-bottom: 5vw;
@@ -122,10 +122,9 @@ footer a:hover {
 
 @media screen and (min-width: 1500px) {
   footer {
-    margin: 4.375rem;
+    margin: 4.375rem 0;
   }
 }
-
 
 /* Utility Class */
 .display-none {
@@ -160,7 +159,6 @@ footer a:hover {
 .fadeOut {
   animation: fadeOut 0.4s forwards;
 }
-
 
 /* Navigation */
 .navigation-bar {
