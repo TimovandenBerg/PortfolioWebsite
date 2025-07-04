@@ -160,6 +160,11 @@ footer a:hover {
   animation: fadeOut 0.4s forwards;
 }
 
+.headline--hover:hover {
+  color: var(--clr-light-black);
+  text-decoration: underline;
+}
+
 /* Navigation */
 .navigation-bar {
   display: flex;

@@ -22,6 +22,10 @@
   overflow: hidden;
 }
 
+.work__card[data-company="Circulera"] {
+  background: url("../../assets/img/circulera/Circulair2.jpeg") center no-repeat;
+  background-size: cover;
+}
 .work__card[data-company="VDV"] {
   background: url("../../assets/svg/VDV.svg") center no-repeat;
   background-size: cover;
@@ -46,6 +50,7 @@
   background-size: cover;
 }
 
+.work__card[data-company="Circulera"] img,
 .work__card[data-company="VDV"] img,
 .work__card[data-company="ChefAR"] img,
 .work__card[data-company="Moonpage"] img,
