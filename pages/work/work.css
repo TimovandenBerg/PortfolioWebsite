@@ -23,7 +23,7 @@
 }
 
 .work__card[data-company="Circulera"] {
-  background: url("../../assets/img/circulera/Circulair2.jpeg") center no-repeat;
+  background: url("../../assets/img/circulera/Circulair.jpeg") center no-repeat;
   background-size: cover;
 }
 .work__card[data-company="VDV"] {
