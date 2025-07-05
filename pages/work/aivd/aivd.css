@@ -1,27 +1,27 @@
 @import "../../../main.css";
 
 /* ///////////////////////// */
-/*        Circulera          */
+/*           AIVD            */
 /* ///////////////////////// */
 
-/* Circulera */
-.circulera {
+/* AIVD */
+.aivd {
     width: 90%;
     margin: 0 auto;
 }
 
 @media screen and (min-width: 640px) {
-    .circulera {
+    .aivd {
         width: 60%;
     }
 }
 @media screen and (min-width: 1200px) {
-    .circulera {
+    .aivd {
         width: 30%;
     }
 }
 
-.circulera h1 {
+.aivd h1 {
     font-family: var(--fnt-chivo);
     font-size: var(--fnt-size-32);
     font-weight: 500;
@@ -30,7 +30,7 @@
     margin: 1rem;
 }
 
-.circulera h3 {
+.aivd h3 {
     font-family: var(--fnt-chivo);
     font-size: var(--fnt-size-16);
     font-weight: 200;

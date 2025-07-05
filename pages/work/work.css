@@ -21,7 +21,11 @@
   aspect-ratio: 16 / 9;
   overflow: hidden;
 }
-
+.work__card[data-company="AIVD"] {
+  background: url("../../assets/img/aivd/AIVDLogo.svg") center no-repeat;
+  background-size: auto 80%;
+  background-color: var(--clr-aivd-purple--light);
+}
 .work__card[data-company="Circulera"] {
   background: url("../../assets/img/circulera/Circulair.jpeg") center no-repeat;
   background-size: cover;
@@ -50,6 +54,7 @@
   background-size: cover;
 }
 
+.work__card[data-company="AIVD"] img,
 .work__card[data-company="Circulera"] img,
 .work__card[data-company="VDV"] img,
 .work__card[data-company="ChefAR"] img,
