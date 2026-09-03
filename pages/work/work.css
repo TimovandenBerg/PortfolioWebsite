@@ -23,7 +23,7 @@
 }
 .work__card[data-company="ZOOMA"] {
   background: url("../../assets/img/aivd/AIVDLogo.svg") center no-repeat;
-  background-size: auto 80%;
+  /* background-size: auto 80%; */
   background-color: var(--clr-zooma-primary);
 }
 .work__card[data-company="AIVD"] {
@@ -59,6 +59,7 @@
   background-size: cover;
 }
 
+.work__card[data-company="ZOOMA"] img,
 .work__card[data-company="AIVD"] img,
 .work__card[data-company="Circulera"] img,
 .work__card[data-company="VDV"] img,
