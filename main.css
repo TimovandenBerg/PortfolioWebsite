@@ -54,7 +54,10 @@ select {
   --clr-light-black: #333333;
   --clr-btn: #e05c5c;
   --clr-light-grey-opacity-80: rgba(170, 170, 170, 0.8);
-  --clr-aivd-purple--light: #E4D1FF;
+
+  /* Case specific colours */
+  --clr-aivd-purple--light: #e4d1ff;
+  --clr-zooma-primary: #00a0dc;
 }
 
 main {
@@ -167,8 +170,8 @@ footer a:hover {
 }
 
 .workLi--style li {
-    margin-left: 2rem;  
-    line-height: 1.8rem;
+  margin-left: 2rem;
+  line-height: 1.8rem;
 }
 
 /* Navigation */

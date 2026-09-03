@@ -21,6 +21,11 @@
   aspect-ratio: 16 / 9;
   overflow: hidden;
 }
+.work__card[data-company="ZOOMA"] {
+  background: url("../../assets/img/aivd/AIVDLogo.svg") center no-repeat;
+  background-size: auto 80%;
+  background-color: var(--clr-zooma-primary);
+}
 .work__card[data-company="AIVD"] {
   background: url("../../assets/img/aivd/AIVDLogo.svg") center no-repeat;
   background-size: auto 80%;
