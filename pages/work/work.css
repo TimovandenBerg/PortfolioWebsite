@@ -22,8 +22,8 @@
   overflow: hidden;
 }
 .work__card[data-company="ZOOMA"] {
-  background: url("../../assets/img/aivd/AIVDLogo.svg") center no-repeat;
-  /* background-size: auto 80%; */
+  background: url("../../assets/img/zooma/ZoomaLogo.svg") center no-repeat;
+  background-size: 50% auto;
   background-color: var(--clr-zooma-primary);
 }
 .work__card[data-company="AIVD"] {
