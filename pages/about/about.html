@@ -1,73 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../main.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="icon" href="../../assets/svg/LogoBlackWhite.svg" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="./about.css">
-    <link rel="icon" href="../../assets/svg/LogoBlackWhite.svg">
-    
     <title>About Me - Timo vd Berg</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navigation-bar">
-        <section class="navigation-bar__logo">
-            <a href="../../index.html"><img src="../../assets/svg/Logo.svg" alt="Logo van Timo vd Berg"></a>
-        </section>
-        <section class="navigation-bar__links">
-            <a href="../../index.html">Work</a>
-            <a class="navigation-bar__links--is-active" href="./about.html">About Me</a>
-            <a href="../contact/contact.html">Contact</a>
-        </section>
-        <section class="navigation-bar__close">
-            <img 
-                id="js--hamburger-menu-bars" 
-                class="" 
-                src="../../assets/svg/Bars.svg" 
-                alt="Knop voor openen en sluiten menu"
-            >
-            <img 
-                id="js--hamburger-menu-xmark" 
-                class="display-none" 
-                src="../../assets/svg/Xmark.svg" 
-                alt="Knop voor openen en sluiten menu"
-            >
-        </section>
+      <section class="navigation-bar__logo">
+        <a href="../../index.html"
+          ><img src="../../assets/svg/Logo.svg" alt="Logo van Timo vd Berg"
+        /></a>
+      </section>
+      <section class="navigation-bar__links">
+        <a href="../../index.html">Work</a>
+        <a class="navigation-bar__links--is-active" href="./about.html"
+          >About Me</a
+        >
+        <a href="../contact/contact.html">Contact</a>
+      </section>
+      <section class="navigation-bar__close">
+        <img
+          id="js--hamburger-menu-bars"
+          class=""
+          src="../../assets/svg/Bars.svg"
+          alt="Knop voor openen en sluiten menu"
+        />
+        <img
+          id="js--hamburger-menu-xmark"
+          class="display-none"
+          src="../../assets/svg/Xmark.svg"
+          alt="Knop voor openen en sluiten menu"
+        />
+      </section>
     </nav>
     <main>
-        <section id="js--mobile-nav" class="mobile-nav display-none">
-            <a href="../../index.html">Work</a>
-            <a href="./about.html">About Me</a>
-            <a href="../contact/contact.html">Contact</a>
+      <section id="js--mobile-nav" class="mobile-nav display-none">
+        <a href="../../index.html">Work</a>
+        <a href="./about.html">About Me</a>
+        <a href="../contact/contact.html">Contact</a>
+      </section>
+      <section class="about">
+        <h1>Timo van den Berg</h1>
+        <a href="../../assets/download/CV-TimovdBerg-EN.pdf" target="_blank"
+          ><button class="about__resume">Download Resume</button></a
+        >
+        <section class="about__text">
+          <p>
+            I am a junior FE developer and UX designer bases in Leiden, The
+            Netherlands. I have experience in different platforms. PC, mobile,
+            Nreal glasses and the Hololens 1 & 2. I am graduating computer
+            science with interaction technology as my specialization.
+          </p>
+          <p>
+            Designing, developing and researching the user experience with
+            passion is what I enjoy. Creating a new dynamic user friendly
+            application whilst talking with developers, project managers, design
+            teams and UX designers for any platform given is the challenge I
+            seek for.
+          </p>
         </section>
-        <section class="about">
-            <h1>Timo van den Berg</h1>
-            <a href="../../assets/download/CV-TimovdBerg-EN.pdf" target="_blank"><button class="about__resume">Download Resume</button></a>
-            <section class="about__text">
-                <p>I am a junior FE developer and UX designer bases in Leiden, The Netherlands. I have experience in different platforms.
-                PC, mobile, Nreal glasses and the Hololens 1 & 2. I am graduating computer science with interaction technology as my
-                specialization.</p>
-                <p>Designing, developing and researching the user experience with passion is what I enjoy. Creating a new dynamic user
-                friendly application whilst talking with developers, project managers, design teams and UX designers for any platform
-                given is the challenge I seek for.</p>
-            </section>
-            <div class="about__maps">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23284.532266673214!2d4.494138640460885!3d52.161875551069286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c68b88c9d753%3A0x74076352baf3fe49!2sLeiden!5e0!3m2!1snl!2snl!4v1690963417505!5m2!1snl!2snl"
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+        <div class="about__maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23284.532266673214!2d4.494138640460885!3d52.161875551069286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c68b88c9d753%3A0x74076352baf3fe49!2sLeiden!5e0!3m2!1snl!2snl!4v1690963417505!5m2!1snl!2snl"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
     </main>
-</body>
-<script src="../../main.js"></script>
-
+  </body>
+  <script src="../../main.js"></script>
 </html>
