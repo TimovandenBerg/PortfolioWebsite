@@ -11,10 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../../main.css" />
-    <link rel="stylesheet" href="./aivd.css" />
+    <link rel="stylesheet" href="./zooma.css" />
     <link rel="icon" href="../../../assets/svg/LogoBlackWhite.svg" />
 
-    <title>AIVD - Timo vd Berg</title>
+    <title>ZOOMA - Timo vd Berg</title>
   </head>
   <body>
     <nav class="navigation-bar">
@@ -51,98 +51,187 @@
         <a href="../../about/about.html">About Me</a>
         <a href="../../contact/contact.html">Contact</a>
       </section>
-      <section class="aivd workLi--style">
-        <h1>AIVD</h1>
+      <section class="zooma workLi--style">
+        <h1>ZOOMA Digital Vinyl Collection</h1>
         <h3>
-          AIVD commission at
-          <a class="headline--hover" href="https://asopos.nl" target="_blank"
-            >A.L.S.R.V. Asopos de Vliet</a
+          Bringing
+          <a
+            class="headline--hover"
+            href="https://zooma.nl/platencollectie"
+            target="_blank"
+            >ZOOMA’s</a
           >
+          vinyl culture online: a digital record collection for everyone who
+          shaped the company.
         </h3>
-        <p>
-          For the redesign and the development of the mobile application for
-          Asopos de Vliet I led the UX/UI team. A.L.S.R.V. Asopos de Vliet is a
-          student association based in the Netherlands. This project involved
-          collaborating closely with a team of fellow UX designers and
-          developers, as well as engaging with various stakeholders from the
-          association to ensure the app met their specific needs and enhanced
-          the user experience for all members. The application was developed
-          using Dart and Flutter, showcasing my dual expertise in design and
-          front-end development.
-        </p>
-        <p>
-          <b>My Role</b>
-          <br />
-          <li>
-            Conducted analysis of existing user flows and identified pain points
-            within the previous application.
-          </li>
-          <li>
-            Developed a modern, clean, and consistent visual design standard for
-            the entire application, adhering to Asopos de Vliet's branding.
-          </li>
-          <li>
-            Created high-fidelity mockups and prototypes for all screens,
-            ensuring a seamless and aesthetically pleasing interface.
-          </li>
-          <li>
-            Created a comprehensive style guide to ensure consistency across the
-            application surrounding colors, typography and states for buttons
-            and forms.
-          </li>
-          <li>
-            Collaborated with developers to integrate various functionalities
-            and ensure cross-platform compatibility.
-          </li>
-          <li>Presenting the design and development process.</li>
-        </p>
-        <p class="margin-bottom">
-          Under this page you can find some of the pages from the Design.
-        </p>
-        <img
-          src="../../../assets/img/aivd/AIVDAfschrijfsysteem.png"
-          alt="AIVD Boat Registration System"
-        />
-        <figcaption>AIVD Boat Registration System</figcaption>
-        <section class="aivd__dashboard">
+        <section class="context">
+          <p>
+            ZOOMA is an IT company with a musician’s heart. It started as a
+            high-school band, and that love of music still shapes the office. At
+            the centre of the room sits a record player surrounded by the
+            platencollectie (the vinyl record collection). Every record stands
+            for someone who has had an impact on the company, choses together
+            with a short motivation of why they’ve chosen the album. The genres
+            are as broad as the people behind them. Each workday ends with the
+            record player spinning.
+          </p>
           <img
-            src="../../../assets/img/aivd/AIVDDashboardDesign.png"
-            alt="AIVD Dashboard Page"
+            src="../../../assets/img/zooma/01 Physical Vinyl Collection.webp"
+            alt="Developers of ZOOMA sitting with their favorite album in front of the record player"
           />
-          <img
-            src="../../../assets/img/aivd/AIVDDM-DashboardDesign.png"
-            alt="AIVD Dashboard Page Dark Mode"
-          />
-          <section class="aivd__dashboard__modal">
+          <figcaption>
+            The platencollectie: every record represents someone who shaped
+            ZOOMA.
+          </figcaption>
+        </section>
+        <section class="problem">
+          <p>
+            That ritual only exists inside the office. If you’re not standing
+            next to the record player, you can’t hear it. This excludes exactly
+            the people the collection is meant to remember: ex-colleagues,
+            family, and future hires who should be able to taste ZOOMA’s culture
+            before walking in. It is also a natural selling point towards
+            investors. The decision to bring the collection online so everyone
+            can enjoy it was obvious.
+          </p>
+        </section>
+        <section class="process">
+          <p>
+            <b>Kickoff: know the why before the what</b>
+            The project started with a meeting to align context, scope and the
+            core idea. That meeting gave me the why and the who. From that point
+            onwards I could brainstorm which features would actually serve them.
+          </p>
+          <section class="process__wireframes">
+            <p>
+              <b>Wireframes: explore cheap, decide together.</b>
+              I sketched on paper first as it is the fastest way to explore how
+              to divide the canvas and kill weak ideas before they cost
+              anything. Then I picked the strongest concepts together with a
+              co-worker, combined them in Figma, refined them from low-fi into
+              high-fi, gathered one more round of feedback, and finally aligned
+              the design with ZOOMA’s visual language: sharp edges, black,
+              white, blue and a small touch of yellow. Minimalist, and right up
+              my alley. However, building a brand new page on ZOOMA’s old
+              component library was harder than expected. Every element was a
+              decision between reusing, replacing or building from scratch.
+            </p>
             <img
-              src="../../../assets/img/aivd/AIVDDashboardModalWeerDesign.png"
-              alt="AIVD Dashboard Page Weather Modal"
+              src="../../../assets/img/zooma/02 Paper Wireframes A.jpg"
+              alt="Paper wireframes of the ZOOMA Digital Vinyl Collection"
             />
-            <img
-              src="../../../assets/img/aivd/AIVDDM-DashboardModalWeerDesign.png"
-              alt="AIVD Dashboard Page Weather Modal Dark AIVD"
-            />
+            <figcaption>
+              Making and killing ideas before they cost anything
+            </figcaption>
           </section>
+          <p>
+            <b>Scope: decide what the first version must do.</b>
+            Together with the stakeholder, a fellow UX designer and a developer
+            I turned the wishlist into user stories and split them across three
+            versions. The MVP decision: a user must be able to pick an album
+            from an overview and play it. Filters moved to version 2;
+            streamlining text, naming and code moved to version 3.
+          </p>
+          <p>
+            I started implementing with the Spotify API without having
+            researched its constraints first. That was my mistake, and it
+            surfaced quickly. To simplify there are two Spotify API’s: one for
+            statistics, one for playback. And the playback API requires the
+            Spotify widget to be visible at all times.
+          </p>
+          <p>
+            I walked through four options:
+            <li>
+              Hide the widget anyway. My first honest thought was: “it doesn’t
+              matter, I’ll just not display it. As if they’ll check”. For a
+              personal project I might have. For a client, that is not a real
+              option.
+            </li>
+            <li>
+              Host ZOOMA’s own server with all the music on it. Not viable for a
+              multitude of reasons.
+            </li>
+            <li>
+              Switch to another provider, like Deezer. Their API’s were either
+              missing functionality or behind a paywall.
+            </li>
+            <li>
+              Redesign around the constraint and be upfront with the
+              stakeholder.
+            </li>
+          </p>
+          <p>
+            That last one was the call. The first version became simpler to
+            build, and later we shipped our own spinning vinyl with Spotify
+            controls underneath. That became the silver lining. I also made a
+            second controller variant with just the plain Spotify controls, so
+            the user always keeps the choice.
+          </p>
+          <p>
+            <b>Information: people before albums. </b>
+            What to show was its own decision. The collection is about people,
+            so the colleague’s name and motivation come first; the album and
+            artist name appear on hover. For filtering we debated adding “genre”
+            and “since”, but chose only role, because that is how colleagues
+            actually look for each other. To keep that choice reversible, I
+            built the filter as an easily extendable part of the backend.
+          </p>
+          <p>
+            <b>Keeping it moving, and testing the dream version.</b>
+            The project ran party over Christmas and my exam deadlines, so I
+            briefed colleagues to keep it going while I was away. Before launch
+            I ran a full playtest in the office with version 3, the
+            dream/complete version, to find bugs and check that features worked
+            as intended. We found plenty and fixed them within two weeks.
+          </p>
         </section>
-        <figcaption>Dashboard page in AIVD app</figcaption>
-        <img
-          src="../../../assets/img/aivd/AIVDProfielPagina&Settings.png"
-          alt="Profile and settings page"
-        />
-        <figcaption>Profile and settings page.</figcaption>
-        <section class="aivd__feed">
+        <section class="solution">
+          <p>
+            In the end I shipped a digital vinyl collection of everyone who
+            works, or has worked, at ZOOMA. User can:
+          </p>
+          <li>Listen to albums from the collection.</li>
+          <li>Browse the full platencollectie.</li>
+          <li>
+            See who stands behind each record: name, role, since, motivation,
+            plus album and artist name.
+          </li>
+          <li>Filter by role to find colleagues faster.</li>
+          <li>Read what the collection is and why it exists.</li>
+          <li>Find their way back to the main ZOOMA’s website.</li>
           <img
-            src="../../../assets/img/aivd/AIVDFeed.png"
-            alt="AIVD Feed Page"
+            src="../../../assets/img/zooma/04 Final Product Overview.jpg"
+            alt="Final product of the ZOOMA Digital Vinyl Collection, showing the overview of all records"
           />
-          <img
-            src="../../../assets/img/aivd/DM-AIVDFeed.png"
-            alt="AIVD Feed Page Dark Mode"
-          />
+          <figcaption>
+            The digital collection: person-first, album on hover, Spotify
+            playback.
+          </figcaption>
         </section>
-        <figcaption>
-          Feed page in AIVD app where users can read and post posts
-        </figcaption>
+        <section class="results">
+          <p>
+            The collection became part of the workday. The thing that people
+            loved the most is that everyone’s taste in music is vastly
+            different, and now all of those genres are one click away.
+            <br />
+            The stakeholders were happy. Happy enough to show it off to their
+            families ;)
+          </p>
+        </section>
+        <section class="reflection">
+          <p>Reflection</p>
+          <li>
+            I would have made faster component decisions at the start of the
+            design phase. The existing library was old, and I weighed
+            reuse-versus-rebuild for too long.
+          </li>
+          <li>
+            I would research the API landscape before designing around a
+            provider. The Spotify constraint had a major influence on the final
+            design. Knowing the options up front would have let me design for
+            it, not around it.
+          </li>
+        </section>
       </section>
     </main>
     <footer>
