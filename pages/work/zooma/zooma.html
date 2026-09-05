@@ -65,26 +65,30 @@
           shaped the company.
         </h3>
         <section class="context">
+          <h4>Context</h4>
           <p>
             ZOOMA is an IT company with a musician’s heart. It started as a
             high-school band, and that love of music still shapes the office. At
             the centre of the room sits a record player surrounded by the
             platencollectie (the vinyl record collection). Every record stands
-            for someone who has had an impact on the company, choses together
+            for someone who has had an impact on the company, chosen together
             with a short motivation of why they’ve chosen the album. The genres
             are as broad as the people behind them. Each workday ends with the
             record player spinning.
           </p>
-          <img
-            src="../../../assets/img/zooma/01 Physical Vinyl Collection.webp"
-            alt="Developers of ZOOMA sitting with their favorite album in front of the record player"
-          />
-          <figcaption>
-            The platencollectie: every record represents someone who shaped
-            ZOOMA.
-          </figcaption>
+          <figure>
+            <img
+              src="../../../assets/img/zooma/01 Physical Vinyl Collection.webp"
+              alt="Developers of ZOOMA sitting with their favorite album in front of the record player"
+            />
+            <figcaption>
+              The platencollectie: every record represents someone who shaped
+              ZOOMA.
+            </figcaption>
+          </figure>
         </section>
         <section class="problem">
+          <h4>Problem</h4>
           <p>
             That ritual only exists inside the office. If you’re not standing
             next to the record player, you can’t hear it. This excludes exactly
@@ -96,6 +100,7 @@
           </p>
         </section>
         <section class="process">
+          <h4>Process</h4>
           <p>
             <b>Kickoff: know the why before the what</b>
             The project started with a meeting to align context, scope and the
@@ -116,13 +121,15 @@
               component library was harder than expected. Every element was a
               decision between reusing, replacing or building from scratch.
             </p>
-            <img
-              src="../../../assets/img/zooma/02 Paper Wireframes A.jpg"
-              alt="Paper wireframes of the ZOOMA Digital Vinyl Collection"
-            />
-            <figcaption>
-              Making and killing ideas before they cost anything
-            </figcaption>
+            <figure>
+              <img
+                src="../../../assets/img/zooma/02 Paper Wireframes A.jpg"
+                alt="Paper wireframes of the ZOOMA Digital Vinyl Collection"
+              />
+              <figcaption>
+                Making and killing ideas before they cost anything
+              </figcaption>
+            </figure>
           </section>
           <p>
             <b>Scope: decide what the first version must do.</b>
@@ -135,31 +142,33 @@
           <p>
             I started implementing with the Spotify API without having
             researched its constraints first. That was my mistake, and it
-            surfaced quickly. To simplify there are two Spotify API’s: one for
+            surfaced quickly. To simplify there are two Spotify APIs: one for
             statistics, one for playback. And the playback API requires the
             Spotify widget to be visible at all times.
           </p>
-          <p>
-            I walked through four options:
-            <li>
-              Hide the widget anyway. My first honest thought was: “it doesn’t
-              matter, I’ll just not display it. As if they’ll check”. For a
-              personal project I might have. For a client, that is not a real
-              option.
-            </li>
-            <li>
-              Host ZOOMA’s own server with all the music on it. Not viable for a
-              multitude of reasons.
-            </li>
-            <li>
-              Switch to another provider, like Deezer. Their API’s were either
-              missing functionality or behind a paywall.
-            </li>
-            <li>
-              Redesign around the constraint and be upfront with the
-              stakeholder.
-            </li>
-          </p>
+          <section class="process__4options">
+            <p>I walked through four options:</p>
+            <ol>
+              <li>
+                Hide the widget anyway. My first honest thought was: “it doesn’t
+                matter, I’ll just not display it. As if they’ll check”. For a
+                personal project I might have. For a client, that is not a real
+                option.
+              </li>
+              <li>
+                Host ZOOMA’s own server with all the music on it. Not viable for
+                a multitude of reasons.
+              </li>
+              <li>
+                Switch to another provider, like Deezer. Their APIs were either
+                missing functionality or behind a paywall.
+              </li>
+              <li>
+                Redesign around the constraint and be upfront with the
+                stakeholder.
+              </li>
+            </ol>
+          </section>
           <p>
             That last one was the call. The first version became simpler to
             build, and later we shipped our own spinning vinyl with Spotify
@@ -178,7 +187,7 @@
           </p>
           <p>
             <b>Keeping it moving, and testing the dream version.</b>
-            The project ran party over Christmas and my exam deadlines, so I
+            The project ran partly over Christmas and my exam deadlines, so I
             briefed colleagues to keep it going while I was away. Before launch
             I ran a full playtest in the office with version 3, the
             dream/complete version, to find bugs and check that features worked
@@ -186,29 +195,35 @@
           </p>
         </section>
         <section class="solution">
+          <h4>Solution</h4>
           <p>
             In the end I shipped a digital vinyl collection of everyone who
-            works, or has worked, at ZOOMA. User can:
+            works, or has worked, at ZOOMA. Users can:
           </p>
-          <li>Listen to albums from the collection.</li>
-          <li>Browse the full platencollectie.</li>
-          <li>
-            See who stands behind each record: name, role, since, motivation,
-            plus album and artist name.
-          </li>
-          <li>Filter by role to find colleagues faster.</li>
-          <li>Read what the collection is and why it exists.</li>
-          <li>Find their way back to the main ZOOMA’s website.</li>
-          <img
-            src="../../../assets/img/zooma/04 Final Product Overview.jpg"
-            alt="Final product of the ZOOMA Digital Vinyl Collection, showing the overview of all records"
-          />
-          <figcaption>
-            The digital collection: person-first, album on hover, Spotify
-            playback.
-          </figcaption>
+          <ul>
+            <li>Listen to albums from the collection.</li>
+            <li>Browse the full platencollectie.</li>
+            <li>
+              See who stands behind each record: name, role, since, motivation,
+              plus album and artist name.
+            </li>
+            <li>Filter by role to find colleagues faster.</li>
+            <li>Read what the collection is and why it exists.</li>
+            <li>Find their way back to the main ZOOMA website.</li>
+          </ul>
+          <figure>
+            <img
+              src="../../../assets/img/zooma/04 Final Product Overview.jpg"
+              alt="Final product of the ZOOMA Digital Vinyl Collection, showing the overview of all records"
+            />
+            <figcaption>
+              The digital collection: person-first, album on hover, Spotify
+              playback.
+            </figcaption>
+          </figure>
         </section>
         <section class="results">
+          <h4>Results</h4>
           <p>
             The collection became part of the workday. The thing that people
             loved the most is that everyone’s taste in music is vastly
@@ -219,18 +234,20 @@
           </p>
         </section>
         <section class="reflection">
-          <p>Reflection</p>
-          <li>
-            I would have made faster component decisions at the start of the
-            design phase. The existing library was old, and I weighed
-            reuse-versus-rebuild for too long.
-          </li>
-          <li>
-            I would research the API landscape before designing around a
-            provider. The Spotify constraint had a major influence on the final
-            design. Knowing the options up front would have let me design for
-            it, not around it.
-          </li>
+          <h4>Reflection</h4>
+          <ul>
+            <li>
+              I would have made faster component decisions at the start of the
+              design phase. The existing library was old, and I weighed
+              reuse-versus-rebuild for too long.
+            </li>
+            <li>
+              I would research the API landscape before designing around a
+              provider. The Spotify constraint had a major influence on the
+              final design. Knowing the options up front would have let me
+              design for it, not around it.
+            </li>
+          </ul>
         </section>
       </section>
     </main>

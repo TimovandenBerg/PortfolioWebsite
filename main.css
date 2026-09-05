@@ -81,7 +81,9 @@ label,
 input,
 textarea,
 figcaption,
-li {
+li,
+ul,
+ol {
   font-family: var(--fnt-montserrat);
   font-weight: 400;
   font-style: normal;
